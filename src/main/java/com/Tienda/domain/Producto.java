@@ -16,13 +16,13 @@ import lombok.Data;
 @Table(name = "producto")
 public class Producto implements Serializable {
 
-     //Versión de serialización
      private static final long serialVersionUID = 1L;
 
      @Id
      @GeneratedValue(strategy = GenerationType.IDENTITY)
-     @Column(name = "id_producto")
+     @Column(name = "id_producto")//espesifica como se llama la columna en sql
      private Long idProducto;
+
      private String descripcion;
      private String detalle;
      private double precio;
@@ -35,7 +35,6 @@ public class Producto implements Serializable {
      private Categoria categoria;
 
      public Producto() {
-
      }
 
      public Producto(String descripcion, String detalle, double precio, int existencias, String rutaImagen, boolean activo, Categoria categoria) {
