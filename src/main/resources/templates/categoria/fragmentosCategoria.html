@@ -3,6 +3,7 @@
       xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
     <head th:replace="~{layout/plantilla :: head}">
+
         <title>TechShop</title>
     </head>
     <body>
@@ -24,6 +25,8 @@
         </section>
 
         <!-- 2 Fragmento para agregar categoria, es la ventana modal se relaciona con  categoria controller-->
+
+
         <section th:fragment="agregarCategoria">
             <div id="agregarCategoria"
                  class="modal fade"
@@ -32,8 +35,8 @@
                  aria-hidden="true">
                 <div class="modal-dialog modal-md">
                     <div class="modal-content">
-                        <div class="modal-header bg-info text-white">
-                            <h5 class="modal-title">[[#{categoria.agregar}]]</h5>
+                        <div class="modal-header bg-mainHeader text-white">
+                            <h5 class="modal-title text-white">[[#{categoria.agregar}]]</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <form th:action="@{/categoria/guardar}" th:object="${categoria}"
