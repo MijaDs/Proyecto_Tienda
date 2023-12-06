@@ -1,3 +1,12 @@
+$(document).ready(function () {
+     if ($(resultsBlock))
+
+});
+function cargarLista() {
+     var ulr = '/index/refresarButon';
+     $("#resultsBlock").load(ulr)
+}
+
 /* La siguiente función se utiliza para visualizar la imagen seleccionada en la
  * página html donde se desea "cargar" utilizando un llamado "ajax"*/
 function readURL(input) {
