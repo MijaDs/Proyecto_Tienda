@@ -1,10 +1,10 @@
 $(document).ready(function () {
-if ($(resultsBlock))
+if ($("#resultsBlock").length>0){cargarLista();}
 
 
-};
+}); 
         function cargarLista() {
-        var ulr = '/index/refresarButon';
+        var ulr = '/refrescarBoton';
                 $("#resultsBlock").load(ulr)
                 }
 
