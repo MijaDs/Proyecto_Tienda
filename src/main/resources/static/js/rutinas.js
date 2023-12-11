@@ -1,7 +1,7 @@
 $(document).ready(function () {
-     if ($(resultsBlock))
+if ($(resultsBlock))
 
-});
+        };
 function cargarLista() {
      var ulr = '/index/refresarButon';
      $("#resultsBlock").load(ulr)
